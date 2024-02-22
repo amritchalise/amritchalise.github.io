@@ -1,0 +1,66 @@
+/* Project.css */
+
+.project {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h3 {
+    margin-top: 0;
+  }
+  
+  .project-info p {
+    margin-bottom: 10px;
+  }
+  
+  .project-info a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .project-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .project.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow-y: auto;
+  }
+  
+  .project.expanded img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  
+  .project.expanded .project-info {
+    padding: 40px;
+  }
+  
